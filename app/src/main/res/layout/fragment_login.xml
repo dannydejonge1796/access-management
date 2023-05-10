@@ -19,7 +19,7 @@
             android:text="@string/inloggen"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tfPass"
+            app:layout_constraintTop_toBottomOf="@+id/tfLastname"
             tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
         <TextView
@@ -59,7 +59,7 @@
             tools:ignore="VisualLintButtonSize" />
 
         <EditText
-            android:id="@+id/tfPass"
+            android:id="@+id/tfLastname"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -71,11 +71,11 @@
             android:textColorHint="#969696"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tfUser"
+            app:layout_constraintTop_toBottomOf="@+id/tfFirstname"
             tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
 
         <EditText
-            android:id="@+id/tfUser"
+            android:id="@+id/tfFirstname"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"

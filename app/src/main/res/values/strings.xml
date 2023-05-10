@@ -3,7 +3,7 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="login_fragment_label">Login</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="register_fragment_label">Registreren</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
@@ -48,4 +48,7 @@
     <string name="registreren">Registreren</string>
     <string name="wachtwoord">Wachtwoord</string>
     <string name="gebruikersnaam">Gebruikersnaam</string>
+    <string name="voornaam">Voornaam</string>
+    <string name="achternaam">Achternaam</string>
+    <string name="email">Email</string>
 </resources>

@@ -5,11 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.access_management.databinding.FragmentLoginBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 class LoginFragment : Fragment() {
 
   private var _binding: FragmentLoginBinding? = null
@@ -31,9 +29,9 @@ class LoginFragment : Fragment() {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
 
-//    binding.buttonFirst.setOnClickListener {
-//      findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-//    }
+    binding.btnRegister.setOnClickListener {
+      findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+    }
   }
 
   override fun onDestroyView() {
