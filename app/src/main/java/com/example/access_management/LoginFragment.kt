@@ -81,7 +81,7 @@ class LoginFragment : Fragment() {
                 //Display message blocked account
                 Toast.makeText(this.requireContext(), "Your account has been blocked", Toast.LENGTH_SHORT).show()
               } else {
-                //Check if the filled in password matches the password in the database
+                //Hash filled in password and check if it matches the password in the database
                 if (md5(password) == document.get("password")) {
                   val intent = Intent(activity, MainActivity::class.java).apply {
                     putExtra("firstname", document.get("firstname") as String)
