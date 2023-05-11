@@ -101,6 +101,7 @@ class RegisterFragment : Fragment() {
             Log.w(TAG, "Error adding document", e)
           }
 
+        Toast.makeText(this.requireContext(), "Your account has been registered", Toast.LENGTH_SHORT).show()
         findNavController().navigate(R.id.action_RegisterFragment_to_LoginFragment)
       }
     }
