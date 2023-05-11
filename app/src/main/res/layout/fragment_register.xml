@@ -73,29 +73,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:ems="10"
-            android:minHeight="48dp"
             android:hint="@string/email"
             android:importantForAutofill="no"
             android:inputType="text"
+            android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tfLastname"
             tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
-
-        <EditText
-            android:id="@+id/tfPass"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="@string/wachtwoord"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tfUser"
-            tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
 
         <EditText
             android:id="@+id/tfUser"
@@ -108,9 +93,23 @@
             android:inputType="text"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tfEmail"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/tfPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/wachtwoord"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfUser"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

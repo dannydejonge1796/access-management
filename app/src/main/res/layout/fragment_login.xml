@@ -66,7 +66,7 @@
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/wachtwoord"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:minHeight="48dp"
             android:textColorHint="#969696"
             app:layout_constraintEnd_toEndOf="parent"
