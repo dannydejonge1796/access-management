@@ -1,6 +1,7 @@
 package com.example.access_management
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import android.icu.util.Calendar
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.access_management.databinding.FragmentLoginBinding
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.security.MessageDigest
 
 class LoginFragment : Fragment() {
 
@@ -74,13 +76,18 @@ class LoginFragment : Fragment() {
           .addOnSuccessListener { documents ->
             if (documents.size() > 0) {
               val document = documents.first()
-
+              //Check if account has been blocked
               if (document.getLong("login_failures")?.equals(3L) == true) {
+                //Display message blocked account
                 Toast.makeText(this.requireContext(), "Your account has been blocked", Toast.LENGTH_SHORT).show()
               } else {
                 //Check if the filled in password matches the password in the database
-                if (password == document.get("password")) {
-                  Toast.makeText(this.requireContext(), "Login", Toast.LENGTH_SHORT).show()
+                if (md5(password) == document.get("password")) {
+                  val intent = Intent(activity, MainActivity::class.java).apply {
+                    putExtra("firstname", document.get("firstname") as String)
+                    putExtra("lastname", document.get("lastname") as String)
+                  }
+                  startActivity(intent)
                 } else {
                   val docRef = collectionRef.document(document.id)
 
@@ -147,6 +154,12 @@ class LoginFragment : Fragment() {
     binding.btnRegister.setOnClickListener {
       findNavController().navigate(R.id.action_LoginFragment_to_RegisterFragment)
     }
+  }
+
+  private fun md5(input: String): String {
+    val md = MessageDigest.getInstance("MD5")
+    val bytes = md.digest(input.toByteArray())
+    return bytes.joinToString("") { "%02x".format(it) }
   }
 
   override fun onDestroyView() {
