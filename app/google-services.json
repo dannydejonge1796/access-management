@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993491145488",
+    "project_id": "access-management-bfe34",
+    "storage_bucket": "access-management-bfe34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993491145488:android:827dc673f82423d51e0b95",
+        "android_client_info": {
+          "package_name": "com.example.access_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993491145488-jug5vojs5p6p2g9kki7ck60i7t5em4qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI4S2rlUXN3L68bhzW00qTSPEx2XMSZSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993491145488-jug5vojs5p6p2g9kki7ck60i7t5em4qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

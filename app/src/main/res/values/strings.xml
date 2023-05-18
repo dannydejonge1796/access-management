@@ -2,10 +2,12 @@
     <string name="app_name">access-management</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="login_fragment_label">Login</string>
+    <string name="register_fragment_label">Registreren</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
+    <string name="welcome_message">Welkom %1$s %2$s, u bent nu ingelogd!</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -43,4 +45,16 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="inloggen">Inloggen</string>
+    <string name="nog_geen_account">Nog geen account?</string>
+    <string name="registreren">Registreren</string>
+    <string name="wachtwoord">Wachtwoord</string>
+    <string name="gebruikersnaam">Gebruikersnaam</string>
+    <string name="voornaam">Voornaam</string>
+    <string name="achternaam">Achternaam</string>
+    <string name="email">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="uitloggen">Uitloggen</string>
+    <string name="welkomst_tekst">Welkomst tekst</string>
 </resources>
